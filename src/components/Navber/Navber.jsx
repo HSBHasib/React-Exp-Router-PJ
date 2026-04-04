@@ -13,10 +13,13 @@ const Navber = () => {
             <ul
                 tabIndex="-1"
                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                <li><a>Item 1</a></li>
-                <li><a>Item 3</a></li>
-                <li><a>Item 1</a></li>
-                <li><a>Item 3</a></li>
+                <li><NavLink to='/' className={({ isActive }) => isActive && "text-red-700 font-bold border-b-2 border-red-700"}>Home</NavLink></li>
+
+                <li><NavLink to='/about' className={({ isActive }) => isActive && "text-red-700 font-bold border-b-2 border-red-700"}>About</NavLink></li>
+
+                <li><NavLink to='/product' className={({ isActive }) => isActive && "text-red-700 font-bold border-b-2 border-red-700"}>Product</NavLink></li>
+
+                <li><NavLink to='/users' className={({ isActive }) => isActive && "text-red-700 font-bold border-b-2 border-red-700"}>Users</NavLink></li>
             </ul>
             </div>
             <a className="btn btn-ghost text-xl">Exp-Router</a>

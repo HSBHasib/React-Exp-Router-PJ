@@ -8,7 +8,7 @@ const Users = () => {
   return (
     <div className='min-h-[75vh]'>
       <h1 className='underline text-2xl font-semibold py-3 text-center'>Users Page</h1>
-      <div className='grid grid-cols-3 gap-6 px-14'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-14'>
         {
           users.map((userData, idx) => <User key={idx} userData={userData}/>)
         }
