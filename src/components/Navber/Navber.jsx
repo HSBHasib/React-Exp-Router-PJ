@@ -23,10 +23,13 @@ const Navber = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
-            <li><NavLink to='/'>Home</NavLink></li>
-            <li><NavLink to='/about'>About</NavLink></li>
-            <li><NavLink to='/product'>Product</NavLink></li>
-            <li><NavLink to='/users'>Users</NavLink></li>
+                <li><NavLink to='/' className={({ isActive }) => isActive && "text-red-700 font-bold border-b-2 border-red-700"}>Home</NavLink></li>
+
+                <li><NavLink to='/about' className={({ isActive }) => isActive && "text-red-700 font-bold border-b-2 border-red-700"}>About</NavLink></li>
+
+                <li><NavLink to='/product' className={({ isActive }) => isActive && "text-red-700 font-bold border-b-2 border-red-700"}>Product</NavLink></li>
+
+                <li><NavLink to='/users' className={({ isActive }) => isActive && "text-red-700 font-bold border-b-2 border-red-700"}>Users</NavLink></li>
             </ul>
         </div>
         <div className="navbar-end">
