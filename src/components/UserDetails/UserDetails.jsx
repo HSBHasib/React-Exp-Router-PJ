@@ -1,10 +1,10 @@
-import { NavLink, useLoaderData } from "react-router";
+import { NavLink, useLoaderData, useNavigate } from "react-router";
 
 const UserDetails = () => {
     const user = useLoaderData();
-    console.log(user);
+    const {username, name, email, website, address, company, phone} = user;
 
-     const {username, name, email, website, address, company, phone} = user;
+    let navigate =  useNavigate();
 
     
   return (
@@ -53,7 +53,7 @@ const UserDetails = () => {
         </div>
 
         <NavLink>
-            <button className="bg-black text-white py-1.5 px-24 rounded-lg active:scale-95 cursor-pointer">Go Back</button>
+            <button onClick={() => navigate(-1)} className="bg-black text-white py-1.5 px-24 rounded-lg active:scale-95 cursor-pointer">Go Back</button>
         </NavLink>
         
     </div>

@@ -1,7 +1,8 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router'
+import { Link, NavLink, useNavigate } from 'react-router'
 
 const Navber = () => {
+    let navigate = useNavigate();
   return (
     <div>
       <div className="navbar bg-base-200 shadow-sm">
@@ -33,7 +34,7 @@ const Navber = () => {
             </ul>
         </div>
         <div className="navbar-end">
-            <a className="btn rounded-xl border-[1.5px] border-gray-300 transition-all duration-100 active:scale-95 hover:bg-blue-200">Back Home</a>
+            <a onClick={() => navigate('/')} className="btn rounded-xl border-[1.5px] border-gray-300 transition-all duration-100 active:scale-95 hover:bg-blue-200">Back Home</a>
         </div>
         </div>
     </div>
