@@ -6,7 +6,6 @@ import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import Home from './components/Home/Home.jsx'
 import NotFound from './components/NotFound/NotFound.jsx';
-import Navber from './components/Navber/Navber.jsx';
 import Users from './components/Users/Users.jsx';
 import Product from './components/Product/Product.jsx';
 import About from './components/About/About.jsx';
