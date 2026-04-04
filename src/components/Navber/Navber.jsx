@@ -1,5 +1,4 @@
-import React from 'react'
-import { Link, NavLink, useNavigate } from 'react-router'
+import { NavLink, useNavigate } from 'react-router'
 
 const Navber = () => {
     let navigate = useNavigate();
